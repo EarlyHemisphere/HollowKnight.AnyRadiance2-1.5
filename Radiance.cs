@@ -593,7 +593,7 @@ internal class Radiance : MonoBehaviour {
 		{
 			return;
 		}
-		if (_hm.hp <= _phaseControl.FsmVariables.GetFsmInt("P5 Acend").Value)
+		if (_hm.hp < _phaseControl.FsmVariables.GetFsmInt("P5 Acend").Value)
 		{
 			foreach (GameObject item9 in _spikeGroup8)
 			{
@@ -708,7 +708,7 @@ internal class Radiance : MonoBehaviour {
 				}
 			}
 		}
-		if (_hm.hp <= _phaseControl.FsmVariables.GetFsmInt("P5 Acend").Value)
+		if (_hm.hp < _phaseControl.FsmVariables.GetFsmInt("P5 Acend").Value)
 		{
 			GameObject.Find("Radiant Plat Small (10)").LocateMyFSM("radiant_plat").ChangeState(GetFsmEventByName(GameObject.Find("Radiant Plat Small (10)").LocateMyFSM("radiant_plat"), "SLOW VANISH"));
 			if (!onePlatSet)
