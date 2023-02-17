@@ -2,3 +2,5 @@
 Any Radiance 2.0 for the latest version of Hollow Knight 1.5
 
 Credit goes to bob fred for the original code.
+
+Requires ModCommon for HK 1.5.
